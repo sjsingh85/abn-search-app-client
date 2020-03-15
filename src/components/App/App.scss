@@ -1,0 +1,97 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.CompanyDetails {
+  background-color: #f1f1f1;
+  flex-grow: 2;
+
+  .companyTable {
+    width: 100%;
+    display: table;
+    border-spacing: 0;
+    border-collapse: collapse;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+
+    .tblRow {
+      padding: 8px 20px;
+      min-width: 250px;
+    }
+
+    .tblHeader {
+      color: #00000077;
+      font-size: 0.8em;
+    }
+  }
+}
+
+.ResultsList {
+  flex-grow: 1;
+  min-width: 24vw;
+
+  .error-message {
+    color: #b32020;
+  }
+
+  .listWrapper {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    list-style: none;
+
+    .listItem {
+      color: inherit;
+      border: 0;
+      cursor: pointer;
+      margin: 0;
+      outline: 0;
+      user-select: none;
+      border-radius: 0;
+      vertical-align: middle;
+      -moz-appearance: none;
+      background-color: transparent;
+      -webkit-appearance: none;
+      -webkit-tap-highlight-color: transparent;
+
+      width: 100%;
+      display: flex;
+      position: relative;
+      box-sizing: border-box;
+      text-align: left;
+      align-items: center;
+      justify-content: flex-start;
+      text-decoration: none;
+      padding: 8px 20px;
+
+      &.selected {
+        background-color: rgba(0, 0, 0, 0.28);
+      }
+
+      &:hover {
+        text-decoration: none;
+        background-color: rgba(0, 0, 0, 0.08);
+      }
+    }
+  }
+}
